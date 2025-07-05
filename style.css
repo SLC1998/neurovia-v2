@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: radial-gradient(circle at center, #000000 0%, #010b0f 100%);
+  background-color: #000;
   font-family: 'Orbitron', sans-serif;
-  color: #00ffff;
+  color: #00f9ff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,65 +11,64 @@ body {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 20px;
-}
-
-.card {
-  background-color: #0d0d0d;
-  border-radius: 20px;
-  padding: 40px 30px;
-  max-width: 400px;
   text-align: center;
-  box-shadow: 0 0 40px #00ffff;
+  background-color: #111;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px #00f9ff;
+  max-width: 400px;
+  width: 90%;
 }
 
-.logo img {
-  width: 400px;
-  filter: drop-shadow(0 0 5px #00ffff)
-          drop-shadow(0 0 5px #00ffff)
-          brightness(1.9);
-  margin-bottom: 10px;
+.logo {
+  width: 180px;
+  margin-bottom: 20px;
 }
 
-.title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin: 0;
-  color: #00ffff;
+h1 {
+  font-size: 32px;
+  color: #00f9ff;
+  margin: 10px 0;
 }
 
 .subtitle {
-  font-size: 1rem;
-  margin: 5px 0 10px;
-  color: #00e6e6;
+  font-size: 16px;
+  color: #00f9ff;
+  margin-bottom: 10px;
 }
 
 .welcome {
-  font-size: 0.9rem;
-  color: #cccccc;
-  margin-bottom: 25px;
+  font-size: 14px;
+  color: #07c7d5;
+  margin-bottom: 30px;
 }
 
-.button-group .btn {
-  display: block;
-  margin: 15px 0;
-  padding: 14px 20px;
-  background: transparent;
-  border: 2px solid #00ffff;
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  background-color: #111;
+  border: 2px solid #00f9ff;
+  padding: 12px 20px;
   border-radius: 10px;
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: bold;
+  color: #00f9ff;
+  font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 0 15px #00ffff;
-  transition: background 0.3s, color 0.3s;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
 }
 
-.button-group .btn:hover {
-  background-color: #00ffff;
-  color: #000000;
+.btn:hover {
+  background-color: #00f9ff11;
+}
+
+.icon {
+  margin-right: 12px;
+  font-size: 20px;
+  color: #00f9ff;
 }
